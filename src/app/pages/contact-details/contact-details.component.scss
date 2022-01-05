@@ -1,0 +1,30 @@
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 50px;
+  gap: 30px;
+  & .details-item {
+    & .contact-image {
+      width: 300px;
+    }
+    & span {
+      font-weight: 600;
+    }
+  }
+  & .details-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    & img {
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      transition: width 0.2s;
+      &:hover {
+        width: 50px;
+      }
+    }
+  }
+}

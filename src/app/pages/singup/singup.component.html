@@ -1,0 +1,15 @@
+<section class="signup-container">
+  <img class="signup-img" src="../../../assets//bitcoin.png" alt="signupimg" />
+  <form class="signup-form" (ngSubmit)="onSignup()">
+    <label for="signup-input">Please enter your name :</label>
+    <input
+      type="text"
+      id="signup-input"
+      name="name"
+      [(ngModel)]="user.name"
+      autofocus
+      required
+    />
+    <button class="btn sign-up-button capitalize">sign up</button>
+  </form>
+</section>

@@ -1,0 +1,21 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 60px;
+  & .signup-img {
+    width: 150px;
+    margin-block-end: 30px;
+  }
+  & .signup-form {
+    & .sign-up-button {
+      background-color: rgb(252, 239, 170);
+      color: #1f1f1f;
+      border: 0;
+      &:hover {
+        border: 0;
+        background-color: rgb(250, 232, 143);
+      }
+    }
+  }
+}

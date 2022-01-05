@@ -1,1 +1,42 @@
+// SETUP
+@import "styles/setup/variables";
+@import "styles/setup/mixins";
+@import "styles/setup/functions";
+
+// BASICS
+@import "styles/basics/helpers";
+@import "styles/basics/base";
+@import "styles/basics/layout";
+
 /* You can add global styles to this file, and also import other style files */
+
+.active {
+  border-block-end: 2px solid #fae2e2;
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: lightgreen;
+  border: 0;
+  color: whitesmoke;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    color: lightgreen;
+    background-color: whitesmoke;
+    border: 1px solid lightgreen;
+  }
+}
+
+.img-btn {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

@@ -1,0 +1,24 @@
+.contact-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  & .edit-title {
+    font-size: 1.875rem;
+  }
+
+  .edit-nav-buttons {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    & .img-btn {
+      img {
+        width: 140%;
+        transition: width 0.2s;
+        &:hover {
+          width: 160%;
+        }
+      }
+    }
+  }
+}

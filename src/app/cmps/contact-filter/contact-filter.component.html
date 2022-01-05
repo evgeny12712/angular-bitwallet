@@ -1,0 +1,31 @@
+<section class="contact-filter">
+  <h3>Search</h3>
+  <div class="filter-inputs">
+    <input
+      [(ngModel)]="filterBy.term"
+      (ngModelChange)="onSetFilter()"
+      name="term"
+      type="text"
+      id="filterBy"
+      placeholder="Name"
+    />
+    |
+    <input
+      [(ngModel)]="filterBy.phone"
+      (ngModelChange)="onSetFilter()"
+      name="phone"
+      type="text"
+      id="filterBy"
+      placeholder="Number"
+    />
+    |
+    <input
+      [(ngModel)]="filterBy.email"
+      (ngModelChange)="onSetFilter()"
+      name="email"
+      type="text"
+      id="filterBy"
+      placeholder="Email"
+    />
+  </div>
+</section>

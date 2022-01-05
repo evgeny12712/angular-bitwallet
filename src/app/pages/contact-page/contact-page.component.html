@@ -1,0 +1,13 @@
+<section class="contact-page-container">
+  <section class="add-search-container">
+    <contact-filter></contact-filter>
+    <div routerLink="/edit" class="add-btn-container">
+      <img src="../../../assets/plus.png" alt="" />
+      <span>Add Contact</span>
+    </div>
+  </section>
+  <contact-list
+    (onRemove)="onRemoveContact($event)"
+    [contacts]="contacts$ | async"
+  ></contact-list>
+</section>

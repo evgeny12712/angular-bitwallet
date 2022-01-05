@@ -1,0 +1,26 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 50px;
+  color: #1f1f1f;
+  & .hello-user {
+    font-weight: 700;
+  }
+  & .user-item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    & img {
+      width: 40px;
+    }
+  }
+  .user-item-wrapper:not(:first-child) {
+    & span {
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<section class="moves-list-container">
+  <div class="moves-title">Your last {{ moves.length }} Moves:</div>
+  <ul class="moves-list">
+    <li class="moves-item" *ngFor="let move of moves">
+      <div class="moves-row">
+        <span class="capitalize">to : </span>
+        <span>{{ move.to }}</span>
+      </div>
+      <div class="moves-row">
+        <span class="capitalize">At : </span>
+        <span>{{ move.at | date: "short" }}</span>
+      </div>
+      <div class="moves-row">
+        <span class="capitalize">amount : </span>
+        <span>{{ move.amount }}</span>
+      </div>
+    </li>
+  </ul>
+</section>

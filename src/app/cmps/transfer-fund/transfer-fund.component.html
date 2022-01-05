@@ -1,0 +1,15 @@
+<section class="transfer-fund-container">
+  <div class="transfer-fund-title">Transfer coins to {{ contact.name }} :</div>
+  <form class="transfer-form" (ngSubmit)="onTransfer()">
+    <label for="transfer-input" class="capitalize">amount :</label>
+    <input
+      type="number"
+      id="transfer-input"
+      name="amount"
+      [(ngModel)]="amount"
+      autofocus
+      required
+    />
+    <button class="btn capitalize">transfer</button>
+  </form>
+</section>

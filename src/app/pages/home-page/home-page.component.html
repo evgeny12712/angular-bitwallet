@@ -1,0 +1,17 @@
+<section *ngIf="user" class="home-page-container">
+  <div class="user-item-wrapper hello-user">
+    <span class="capitalize">hello </span>
+    <span>{{ user.name }}</span>
+  </div>
+  <div class="user-item-wrapper">
+    <img src="../../../assets/coins.png" alt="" />
+    <span class="capitalize">coins :</span>
+    {{ user.coins }}
+  </div>
+  <div class="user-item-wrapper">
+    <img src="../../../assets/bitcoin.png" alt="" />
+    <span>BTC : </span>
+    {{ bitcoinRate }}
+  </div>
+  <move-list [moves]="user.moves"></move-list>
+</section>

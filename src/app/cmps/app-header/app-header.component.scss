@@ -1,0 +1,44 @@
+.app-header {
+  background-color: lightcyan;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  & .app-logo {
+    color: #1e1e1e;
+    font-size: 2.5rem;
+    margin: 0;
+    cursor: pointer;
+    // text-shadow: 0px -1px 5px #ffffff;
+  }
+  & .header-nav {
+    font-size: 1.875rem;
+    & .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 70px;
+      & li {
+        cursor: pointer;
+        color: #1e1e1e;
+        &:hover {
+          color: #5e5e5e;
+        }
+      }
+    }
+  }
+}
+
+// @media all and (max-width: 460px) {
+//   html {
+//     font-size: 5px;
+//   }
+//   .app-header {
+//     & .app-logo {
+//       font-size: 2rem;
+//     }
+//     max-width: 460px;
+//     background-color: red;
+//   }
+// }

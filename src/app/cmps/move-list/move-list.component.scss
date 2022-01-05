@@ -1,0 +1,27 @@
+.moves-list-container {
+  max-width: 950px;
+  background-color: rgb(238, 238, 238);
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  & .moves-title {
+    font-weight: 600;
+  }
+  & .moves-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    & .moves-item {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.6);
+      gap: 5px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.contact-page-container {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  & .add-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    & .add-btn-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      padding: 3px;
+      border-block-end: 1px solid transparent;
+      width: fit-content;
+      position: relative;
+      & img {
+        width: 25px;
+      }
+      &:hover {
+        border-block-end: 1px solid #accae8;
+      }
+    }
+  }
+}

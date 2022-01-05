@@ -1,0 +1,42 @@
+<section class="contact-edit">
+  <div class="edit-nav-buttons">
+    <button class="img-btn" routerLink="/contacts">
+      <img src="../../../assets/back.png" alt="" />
+    </button>
+    <button *ngIf="contact._id" class="img-btn" (click)="onRemoveContact()">
+      <img src="../../../assets/delete.png" alt="" />
+    </button>
+  </div>
+  <h1 class="edit-title capitalize" *ngIf="contact._id">edit contact</h1>
+  <h1 class="edit-title capitalize" *ngIf="!contact._id">add contact</h1>
+  <form *ngIf="contact" (ngSubmit)="onSaveContact()">
+    <label for="name" class="capitalize">name</label>
+    <input
+      [(ngModel)]="contact.name"
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Name..."
+    />
+
+    <label for="phone" class="capitalize">phone</label>
+    <input
+      [(ngModel)]="contact.phone"
+      type="input"
+      name="phone"
+      id="phone"
+      placeholder="Phone..."
+    />
+
+    <label for="email" class="capitalize">email</label>
+    <input
+      [(ngModel)]="contact.email"
+      type="input"
+      name="email"
+      id="email"
+      placeholder="Email..."
+    />
+
+    <button class="btn capitalize">save</button>
+  </form>
+</section>

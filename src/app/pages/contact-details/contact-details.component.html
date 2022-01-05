@@ -1,0 +1,19 @@
+<section *ngIf="contact" class="contact-details">
+  <div class="details-buttons">
+    <button class="img-btn" (click)="onBack()">
+      <img src="../../../assets/back.png" alt="" />
+    </button>
+    <button class="img-btn" [routerLink]="['/edit', contact._id]">
+      <img src="../../../assets/edit.png" alt="" />
+    </button>
+  </div>
+  <img
+    src="https://robohash.org/{{ contact._id }}?set=set3"
+    alt=""
+    class="contact-image"
+  />
+  <div class="details-item"><span>Name : </span>{{ contact.name }}</div>
+  <div class="details-item"><span>Phone : </span>{{ contact.phone }}</div>
+  <div class="details-item"><span>Email : </span>{{ contact.email }}</div>
+  <transfer-fund [contact]="contact"></transfer-fund>
+</section>

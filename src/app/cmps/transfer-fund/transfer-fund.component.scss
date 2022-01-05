@@ -1,0 +1,14 @@
+.transfer-fund-container {
+  //   width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 8px;
+  & .transfer-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

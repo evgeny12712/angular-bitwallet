@@ -1,0 +1,23 @@
+<section [routerLink]="['/contact', contact._id]" class="contact-preview">
+  <img src="https://robohash.org/{{ contact._id }}?set=set3" alt="" />
+  <!-- <img src="../../../assets/contact.png" alt="" /> -->
+  <section class="info" *ngIf="contact">
+    <div class="preview-item capitalize">
+      <span>name: </span>{{ contact.name }}
+    </div>
+    <div class="preview-item capitalize">
+      <span>phone: </span>{{ contact.phone }}
+    </div>
+    <div class="preview-item capitalize">
+      <span>email: </span>{{ contact.email }}
+    </div>
+  </section>
+  <div class="preview-buttons">
+    <button class="img-btn" [routerLink]="['/edit', contact._id]">
+      <img src="../../../assets/edit.png" alt="" />
+    </button>
+    <button class="img-btn" (click)="onDelete($event, contact._id)">
+      <img src="../../../assets/delete.png" alt="" />
+    </button>
+  </div>
+</section>
